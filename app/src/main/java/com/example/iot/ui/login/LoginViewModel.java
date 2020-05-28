@@ -9,7 +9,7 @@ import android.util.Patterns;
 import com.example.iot.data.LoginRepository;
 import com.example.iot.data.Result;
 import com.example.iot.data.model.LoggedInUser;
-import com.example.iot.R;
+import com.ustc.iot.R;
 
 public class LoginViewModel extends ViewModel {
 

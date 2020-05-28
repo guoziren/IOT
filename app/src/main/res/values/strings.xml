@@ -9,4 +9,11 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+
+
+    <string-array name="gateway_indicator_name">
+        <item>添加网关</item>
+        <item>网关管理</item>
+    </string-array>
+    <string-array name="aa"></string-array>
 </resources>

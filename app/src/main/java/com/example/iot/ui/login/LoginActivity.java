@@ -22,9 +22,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.iot.R;
-import com.example.iot.ui.login.LoginViewModel;
-import com.example.iot.ui.login.LoginViewModelFactory;
+import com.ustc.iot.R;
+
 
 public class LoginActivity extends AppCompatActivity {
 
