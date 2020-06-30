@@ -7,9 +7,14 @@ import android.view.ViewGroup;
 
 
 import com.ustc.iot.R;
+import com.ustc.iot.databinding.FragmentAddGatewayBinding;
+import com.ustc.iot.databinding.FragmentAddSensorBinding;
+import com.ustc.iot.fragment.gatewaycenter.AddGateWayViewModel;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.databinding.DataBindingUtil;
+import androidx.databinding.ViewDataBinding;
 import androidx.fragment.app.Fragment;
 
 /*
@@ -21,10 +26,14 @@ import androidx.fragment.app.Fragment;
 public class FragmentAddSensor extends Fragment {
 
 
+    private FragmentAddSensorBinding mBinding;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_add_sensor,container,false);
+        mBinding = DataBindingUtil.inflate(inflater,R.layout.fragment_add_sensor,container,false);
+        View view = mBinding.getRoot();
+        mBinding.setAddSensorModel(new AddSensorViewModel(mBinding));
         return view;
     }
 }

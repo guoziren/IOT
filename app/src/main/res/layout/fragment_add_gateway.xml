@@ -1,108 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout>
+
+    <data>
+        <variable
+            name="addGatewayModel"
+            type="com.ustc.iot.fragment.gatewaycenter.AddGateWayViewModel" />
+    </data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="16dp">
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="283dp"
-        android:layout_height="40dp"
-        android:padding="5dp"
-        android:layout_marginStart="16dp"
-        android:background="@drawable/shape_edittext"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="280dp"
-        android:layout_height="181dp"
-        android:padding="8dp"
-        android:background="@drawable/shape_edittext"
-        android:layout_marginStart="16dp"
-
-        android:gravity="top"
-        android:inputType="textMultiLine"
-        android:maxLines="6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toTopOf="@+id/textView6" />
-
-    <RadioGroup
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:orientation="horizontal"
-
-        app:layout_constraintBottom_toBottomOf="@+id/textView8"
-        app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="@+id/textView8">
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:text="网关"
+            android:layout_gravity="center_vertical"
+            android:text="网关名称"
             android:textSize="18sp" />
-
-        <RadioButton
-            android:id="@+id/radioButton"
+        <EditText
+            android:id="@+id/et_name"
             android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:gravity="left"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:padding="5dp" />
+    </LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+      <TextView
+          android:id="@+id/textView1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:text="上传协议"
+          android:textSize="18sp" />
+      <EditText
+          android:id="@+id/editText1"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_marginStart="16dp"
+          android:gravity="left"
+          android:textSize="16sp"
+          android:maxLines="1"
+          android:padding="5dp" />
+  </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="传感器"
+            android:layout_gravity="center_vertical"
+            android:text="输入电压"
             android:textSize="18sp" />
-    </RadioGroup>
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="56dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="30dp"
-        android:gravity="right|center_vertical"
-        android:text="介绍"
-        android:textAlignment="textEnd"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:gravity="right|center_vertical"
-        android:text="网关名称"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:padding="5dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="所属公司"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="可充电电池"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:padding="5dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="创建类型"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView7"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_enr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="工作环境"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/et_enr"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:padding="5dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="网关介绍"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/et_intro"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:padding="5dp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <Button
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="创建"
+            android:onClick="@{addGatewayModel.onClick}"
+            style="@style/Widget.MaterialComponents.Button"
+            android:textSize="18sp"
+            android:id="@+id/btn_create">
+
+        </Button>
+    </RelativeLayout>
+
+</LinearLayout>
+</layout>
