@@ -3,6 +3,7 @@ package com.ustc.iot;
 import android.app.Application;
 import android.content.Context;
 
+import com.ustc.iot.util.ReflectUtil;
 import com.ustc.iot.util.SharedPreferencesUtil;
 
 /*
@@ -18,6 +19,7 @@ public class MyApplication extends Application {
         super.onCreate();
         INSTANCE = this;
         SharedPreferencesUtil.getInstance(this,"config");
+        ReflectUtil.initMap();
     }
     public static Context getAppContext(){
         return INSTANCE;

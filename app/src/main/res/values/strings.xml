@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">IOT</string>
+    <string name="app_name">物联网组网</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -23,6 +23,27 @@
 
     <string name="menu_slideshow">Slideshow</string>
     <string name="home_second">Home Second</string>
+    <!--    搜索界面-->
+    <!--    <string name="model">model</string>-->
+    <!--    <string name="innerprotocols">innerProtocols</string>-->
+    <!--    <string name="uploadprotocols">uploadProtocols</string>-->
+    <!--    <string name="industrialgrade">industrialGrade</string>-->
+    <!--    <string name="chargeable">chargeable</string>-->
+    <!--    <string name="lowvoltage">lowVoltage</string>-->
+    <!--    <string name="highvoltage">highVoltage</string>-->
+    <!--    <string name="lowtemperature">lowTemperature</string>-->
+    <!--    <string name="hightemperature">highTemperature</string>-->
+    <string name="model">型号</string>
+    <string name="innerprotocols">网间协议</string>
+    <string name="uploadprotocols">上传协议</string>
+    <string name="industrialgrade">行业等级</string>
+    <string name="chargeable">是否可充电</string>
+    <string name="lowvoltage">低压</string>
+    <string name="highvoltage">高压</string>
+    <string name="lowtemperature">低温</string>
+    <string name="hightemperature">高温</string>
+
+
     <string-array name="gateway_indicator_name">
         <item>添加网关</item>
         <item>网关管理</item>

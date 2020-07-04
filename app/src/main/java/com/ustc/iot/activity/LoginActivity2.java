@@ -40,13 +40,17 @@ public class LoginActivity2 extends AppCompatActivity {
                     ToastUtil.showToast("输入有空值");
                     return;
                 }
-                ApiUser.login(username, password, new ApiUser.onLoginListener() {
-                    @Override
-                    public void onSuccess() {
-                        startActivity(new Intent(LoginActivity2.this,MainActivity.class));
+//                ApiUser.login(username, password, new ApiUser.onLoginListener() {
+//                    @Override
+//                    public void onSuccess() {
+//                        startActivity(new Intent(LoginActivity2.this,HomeActivity.class));
+//                        finish();
+//                    }
+//                });
+
+                        startActivity(new Intent(LoginActivity2.this,HomeActivity.class));
                         finish();
-                    }
-                });
+
 
             }
         });

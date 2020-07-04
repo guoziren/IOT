@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="方案名称"
+            android:text="项目名称"
             />
         <TextView
             android:id="@+id/tv_value"
@@ -40,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="方案介绍" />
+            android:text="介绍" />
 
         <TextView
             android:id="@+id/intro"

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/project_center"
+        android:enabled="true"
+        android:icon="@drawable/project_icon"
+        android:title="项目中心"/>
+    <item
+        android:id="@+id/search_icon"
+        android:enabled="true"
+        android:icon="@drawable/searcg_icon"
+        android:title="搜索"/>
+    <item
+        android:id="@+id/user_center"
+        android:enabled="true"
+        android:icon="@drawable/user_icon"
+        android:title="用户中心"/>
+</menu>

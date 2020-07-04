@@ -25,17 +25,18 @@ public class RegisterViewModel {
     public void onClick(View view){
          String email = mRegisterBinding.textInputEditText1.getText().toString();
        String password =mRegisterBinding.textInputEditText2.getText().toString();
-       String name =mRegisterBinding.textInputEditText3.getText().toString();
-       String companyName =mRegisterBinding.textInputEditText4.getText().toString();
+//       String name =mRegisterBinding.textInputEditText3.getText().toString();
+//       String companyName =mRegisterBinding.textInputEditText4.getText().toString();
        String phone =mRegisterBinding.textInputEditText6.getText().toString();
        String username =mRegisterBinding.textInputEditText7.getText().toString();
 
-       if(TextUtils.isEmpty(email) || TextUtils.isEmpty(password) || TextUtils.isEmpty(name) || TextUtils.isEmpty(companyName) ||
-               TextUtils.isEmpty(phone)){
+       if(TextUtils.isEmpty(email) || TextUtils.isEmpty(password)
+//               || TextUtils.isEmpty(name) || TextUtils.isEmpty(companyName)
+               || TextUtils.isEmpty(phone)){
            ToastUtil.showToast(MyApplication.getAppContext(),0,"有输入为空");
            return;
        }
-        ApiUser.registe(name,username,password,companyName,phone,email);
+//        ApiUser.registe(name,username,password,companyName,phone,email);
     }
 
 

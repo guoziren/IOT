@@ -87,21 +87,21 @@
         </com.google.android.material.textfield.TextInputLayout>
 
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textField3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="姓名"
-            tools:layout_editor_absoluteY="305dp">
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/textField3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="姓名"-->
+<!--            tools:layout_editor_absoluteY="305dp">-->
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/textInputEditText3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:maxLines="1"
-                android:layout_weight="1" />
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/textInputEditText3"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:maxLines="1"-->
+<!--                android:layout_weight="1" />-->
 
-        </com.google.android.material.textfield.TextInputLayout>
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textField6"
             android:layout_width="match_parent"
@@ -119,52 +119,52 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textField4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="公司名称"
-            tools:layout_editor_absoluteY="305dp">
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/textField4"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="公司名称"-->
+<!--            tools:layout_editor_absoluteY="305dp">-->
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/textInputEditText4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:maxLines="1"
-                android:layout_weight="1" />
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/textInputEditText4"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:maxLines="1"-->
+<!--                android:layout_weight="1" />-->
 
-        </com.google.android.material.textfield.TextInputLayout>
-        <RadioGroup
-            android:id="@+id/radioGroup"
-            android:checkedButton="@+id/radio_button_1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="15dp"
-                    android:text="用户类型"/>
-                <RadioButton
-                    android:id="@+id/radio_button_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:visibility="gone"
-                    android:checked="false"
-                    android:text="客户"/>
-                <RadioButton
-                    android:id="@+id/radio_button_2"
-                    android:layout_width="wrap_content"
-                    android:checked="true"
-                    android:layout_height="wrap_content"
-                    android:text="供应商"/>
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+<!--        <RadioGroup-->
+<!--            android:id="@+id/radioGroup"-->
+<!--            android:checkedButton="@+id/radio_button_1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginRight="15dp"-->
+<!--                    android:text="用户类型"/>-->
+<!--                <RadioButton-->
+<!--                    android:id="@+id/radio_button_1"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:checked="false"-->
+<!--                    android:text="客户"/>-->
+<!--                <RadioButton-->
+<!--                    android:id="@+id/radio_button_2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:checked="true"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="供应商"/>-->
 
-            </LinearLayout>
+<!--            </LinearLayout>-->
 
-        </RadioGroup>
+<!--        </RadioGroup>-->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"

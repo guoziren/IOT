@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/gateway"
+        android:title="网关"
+
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/sensor"
+        android:title="传感器" />
+    <item android:id="@+id/solution"
+        android:title="组网方案" />
+</menu>

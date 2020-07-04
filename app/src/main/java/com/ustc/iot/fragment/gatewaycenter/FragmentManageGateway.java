@@ -10,14 +10,14 @@ import android.view.ViewGroup;
 import com.ustc.iot.R;
 import com.ustc.iot.adapter.GatewayRecyclerAdapter;
 import com.ustc.iot.fragment.solution.NickName;
-import com.ustc.iot.model.entity.Gateway;
 import com.ustc.iot.util.LogUtil;
 
 import net.lucode.hackware.magicindicator.buildins.UIUtil;
 
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.TreeMap;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -70,7 +70,7 @@ public class FragmentManageGateway extends Fragment {
         for (int i = 0; i < 10; i++) {
             GatewayBean gateway = new GatewayBean();
             gateway.setName(NickName.generateName2() + "网关");
-            HashMap<String,String> map = new HashMap<>();
+            LinkedHashMap<String, String> map = new LinkedHashMap<>();
             map.put("网间协议","RS-351");
             map.put("上传协议","UDP");
             map.put("可否充电","是");

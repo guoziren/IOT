@@ -1,6 +1,6 @@
 package com.ustc.iot.fragment.gatewaycenter;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 /*
  * 包名：      com.ustc.iot.fragment.gatewaycenter
@@ -10,7 +10,7 @@ import java.util.HashMap;
  */
 public class GatewayBean {
     private String name;
-    private HashMap<String,String> map;
+    private LinkedHashMap<String, String> map;
 
     public String getName() {
         return name;
@@ -20,11 +20,11 @@ public class GatewayBean {
         this.name = name;
     }
 
-    public HashMap<String, String> getMap() {
+    public LinkedHashMap<String, String> getMap() {
         return map;
     }
 
-    public void setMap(HashMap<String, String> map) {
+    public void setMap(LinkedHashMap<String, String> map) {
         this.map = map;
     }
 }

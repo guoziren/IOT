@@ -20,7 +20,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:layout_marginRight="10dp"
-                android:text="解决方案名称">
+                android:text="项目名称">
 
             </TextView>
             <EditText
